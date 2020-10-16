@@ -17,9 +17,31 @@ $(() => {
           ${isReservation ? 
             `<p>${moment(property.start_date).format('ll')} - ${moment(property.end_date).format('ll')}</p>` 
             : ``}
+
+            ${!isReservation ?  
+            `<form action="/api/reservations" method="post" id="reservation-form" class="reservation-form">
+            <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="start_date" 
+                   value="2018-07-22"
+                   min="2018-01-01" max="2021-12-31">
+          
+            <label for="end">End date:</label>
+
+            <input type="date" id="end" name="end_date" 
+                  value="2018-07-22"
+                  min="2018-01-01" max="2021-12-31">
+            <input hidden name="property_id" value = ${property.id}>
+            
+            <button id="submit-reservation" type="submit">Submit</button>
+                  
+          </form> ` :``}   
+
           <footer class="property-listing__footer">
             <div class="property-listing__rating">${Math.round(property.average_rating * 100) / 100}/5 stars</div>
             <div class="property-listing__price">$${property.cost_per_night/100.0}/night</div>
+
+            
           </footer>
         </section>
       </article>

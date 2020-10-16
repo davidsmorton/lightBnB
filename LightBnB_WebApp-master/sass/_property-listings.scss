@@ -9,7 +9,7 @@
   margin: 20px 0;
   width: 100%;
   max-width: 600px;
-  height: 200px;
+  height: 275px;
   border: 1px solid black;
   box-sizing: border-box;
   display: flex;
@@ -31,6 +31,14 @@
     }
   }
 }
+.property-listing_details {
+  display: flex;
+  flex-direction: column;
+}
+ .reservation-form{
+   display:flex;
+   flex-direction: column;
+ } 
 
 @media screen and (max-width: 400px) {
   .property-listing {
