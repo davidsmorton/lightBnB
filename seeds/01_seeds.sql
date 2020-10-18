@@ -10,9 +10,9 @@ INSERT INTO properties (
   owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active
 )
 VALUES
-(1,'the great escape', 'description','http://www.cgstock.com/7232', 'http://www.cgstock.com/7232', 200, 2, 2, 4, 'Canada', 'Maple', 'Halifax','Nova Scotia', 'B0N 2TO', 'TRUE'), 
-(2,'the greatest escape', 'description','http://www.cgstock.com/694', 'http://www.cgstock.com/694', 300, 4, 4, 6, 'Canada', 'Victoria', 'Moosejaw', 'Saskatchewan', 'R0N 7X2', 'TRUE'),
-(3,'the even greater escape', 'description','http://www.cgstock.com/670', 'http://www.cgstock.com/670', 500, 10, 5, 10, 'Canada', 'Main', 'Calgary', 'Alberta', 'V3N 6R2', 'TRUE');
+(1,'the great escape', 'description','https://i.imgur.com/KbwPb6Y.jpg', 'https://i.imgur.com/KbwPb6Y.jpg', 200, 2, 2, 4, 'Canada', 'Maple', 'Halifax','Nova Scotia', 'B0N 2TO', 'TRUE'), 
+(2,'the greatest escape', 'description','https://i.imgur.com/KbwPb6Y.jpg', 'https://i.imgur.com/KbwPb6Y.jpg', 300, 4, 4, 6, 'Canada', 'Victoria', 'Moosejaw', 'Saskatchewan', 'R0N 7X2', 'TRUE'),
+(3,'the even greater escape', 'description','https://i.imgur.com/KbwPb6Y.jpg', 'https://i.imgur.com/KbwPb6Y.jpg', 500, 10, 5, 10, 'Canada', 'Main', 'Calgary', 'Alberta', 'V3N 6R2', 'TRUE');
 
 INSERT INTO reservations (
   start_date, end_date, property_id, guest_id
